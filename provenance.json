@@ -1,0 +1,84 @@
+{
+  "review_date": "2026-10-05",
+  "review_window": "2026-09-28 through 2026-10-05, America/Puerto_Rico",
+  "scope": "Retrospective method documentation; source artifacts retained privately, not a reproducible execution bundle.",
+  "sources": [
+    {
+      "path": "binder_evolve/README.md",
+      "sha256": "91458cfbd5c21b25d80645d6a54920d02ebd83eb2da97dd62cedcd9a06ab04be"
+    },
+    {
+      "path": "binder_jump/README.md",
+      "sha256": "6236d0e1313e0a35e2c0df1707027b86f1948b40386ade48a5299d3e82b7fd38"
+    },
+    {
+      "path": "binder_jump/JUMP_POLICY_V2.md",
+      "sha256": "8f2473b166dacfb90683de782fe0027b8df50f442bca8b5a67d13fc990d73907"
+    },
+    {
+      "path": "binder_jump/arms/gpt/program.md",
+      "sha256": "f4c5ab27fee6085c5cb8dcf91e3b1e72f0b3490a751278ded1a43b870d4f8d8e"
+    },
+    {
+      "path": "binder_jump/arms/deepseek/program.md",
+      "sha256": "b777a2b7572c8fcd9eebc13989377c37cb928ceda0313e55028f13961ceab59f"
+    },
+    {
+      "path": "distributed_engine/README.md",
+      "sha256": "131b9bf04f391923627de6499fa39ef9cfb1d1017bdd795ee329ae237778ddca"
+    },
+    {
+      "path": "results/mutations_all_20261003/manifest.json",
+      "sha256": "a521adf4e9154902b9ea3ce7143f17ba2f6b208d4eaad2028a13591379d591fa"
+    },
+    {
+      "path": "results/mutations_all_20261003/all_mutations.csv",
+      "sha256": "97a937b3e24e129d527e9c511f6c2d5e19334065d621914f81372458533d9086"
+    },
+    {
+      "path": "results/mutations_all_20261003/hard_cuts_20261003/README.md",
+      "sha256": "d6f7d608861adaba913914613a5b81ca34555504a4f64283918cc6dd09c91647"
+    },
+    {
+      "path": "results/mutations_all_20261003/ph_selectivity_ranked/README.md",
+      "sha256": "cc37881d62aa052f8d6ba8f45a557ea60acdd96e1d13a1ad0b5cda156e86bd11"
+    },
+    {
+      "path": "candidates/README.md",
+      "sha256": "84e8cb6d3dcdb84358eaa1b9e51e6f80521cf271ef95d19b16c7452125246e4b"
+    },
+    {
+      "path": "candidates/RANKING_NOTES.md",
+      "sha256": "d16973e24e37529ac3e6b1fd018e408d65516ef9d56583d108b8de6513435336"
+    },
+    {
+      "path": "candidates/repaired/README.txt",
+      "sha256": "d905aaaf9e8e56dffac2b610f0cd9003b296dd70285d9c907f3f17e0fd7d8ba4"
+    },
+    {
+      "path": "candidates/repaired/grades_repaired.csv",
+      "sha256": "72db1fa38197c18d5f9fcd3f3db979d1d76e42cbc2f00804a3cd7f0edbd78c9f"
+    },
+    {
+      "path": "candidates/submission/final20_submission.csv",
+      "sha256": "ab9e02b178b8646a4d0c26bbd3191f5880f3adfcadb034d4986d2a61afd1542b"
+    },
+    {
+      "path": "candidates/submission/underdog_swap_manifest.json",
+      "sha256": "a155660ca3a280b36d1ed3333a714a7662f6c10205fe16c0abc12098eed53c8a"
+    }
+  ],
+  "checked_counts": {
+    "candidate_records": 9166,
+    "accepted_mutations": 322,
+    "accepted_by_arm": {
+      "gpt": 144,
+      "deepseek": 178
+    },
+    "canonical_sequences": true,
+    "unique_global_ids": true,
+    "live_mutations_with_recorded_edit_reconstruction": 9084,
+    "final_batch_size": 20
+  },
+  "limits": "Counts and source consistency checked; no GPU predictions or wet-lab experiments rerun. The recorded edit-reconstruction flag is historical evidence, not an independent reconstruction in this review."
+}

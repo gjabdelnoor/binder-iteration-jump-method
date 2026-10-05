@@ -1,0 +1,8 @@
+# Explicit publication allowlist.
+*
+!.gitignore
+!README.md
+!METHOD.md
+!REVIEW.md
+!submission-text.md
+!provenance.json
