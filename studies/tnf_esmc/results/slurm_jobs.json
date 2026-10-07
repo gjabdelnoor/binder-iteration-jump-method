@@ -1,0 +1,32 @@
+[
+  {
+    "JobId": "5",
+    "JobName": "tnf-esmc-setup",
+    "JobState": "COMPLETED",
+    "ExitCode": "0:0",
+    "RunTime": "00:06:59",
+    "StartTime": "2026-10-07T14:30:37",
+    "EndTime": "2026-10-07T14:37:36",
+    "NodeList": "maricao-3060"
+  },
+  {
+    "JobId": "6",
+    "JobName": "tnf-esmc-study",
+    "JobState": "COMPLETED",
+    "ExitCode": "0:0",
+    "RunTime": "00:05:41",
+    "StartTime": "2026-10-07T14:41:15",
+    "EndTime": "2026-10-07T14:46:56",
+    "NodeList": "maricao-3060"
+  },
+  {
+    "JobId": "7",
+    "JobName": "tnf-esmc-verify",
+    "JobState": "COMPLETED",
+    "ExitCode": "0:0",
+    "RunTime": "00:00:17",
+    "StartTime": "2026-10-07T14:50:19",
+    "EndTime": "2026-10-07T14:50:36",
+    "NodeList": "maricao-3060"
+  }
+]

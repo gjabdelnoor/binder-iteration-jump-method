@@ -1,0 +1,23 @@
+{
+  "repo": "Anthropic/claude-protein-binder-design",
+  "revision": "9e1b81696da46835e9e9cde9a3da976e0abc92ab",
+  "file": "data/tables/design_summary.parquet",
+  "parquet_sha256": "3e796869b8dc0c90d7ab0e12daf25308c0cf272d04c6a5e27281f903ecd18744",
+  "local_input_sha256": "a96dc3a4fcc293dd393a8c56fa367dadcac4db326c30f1c3ea3d8c2b9f72367a",
+  "used_fields_match": true,
+  "compared_columns": [
+    "uuid",
+    "sequence",
+    "target",
+    "binder_final",
+    "adaptyv_expression",
+    "adaptyv_binding"
+  ],
+  "compared_targets": [
+    "15-PGDH",
+    "EGFR",
+    "RBX1",
+    "TNFa",
+    "TrkA"
+  ]
+}

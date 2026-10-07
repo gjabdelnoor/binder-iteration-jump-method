@@ -1,0 +1,114 @@
+{
+  "status": "completed",
+  "slurm_job_id": "6",
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "torch_version": "2.11.0+cu130",
+  "seconds": 320.68404356099995,
+  "rows": [
+    {
+      "arm": "frozen_esmc_logistic",
+      "folds": 3,
+      "cv_mean_test_ap": 0.6222138972138972,
+      "cv_sd_test_ap": 0.11934589205900234,
+      "cv_mean_enrichment10": 6.055555555555556,
+      "cv_sd_enrichment10": 0.9179284245476838,
+      "pooled_oof_ap": 0.5945848595848595,
+      "locked_holdout": {
+        "n": 22,
+        "positives": 2,
+        "prevalence": 0.09090909090909091,
+        "average_precision": 0.8333333333333333,
+        "roc_auc": 0.975,
+        "enrichment_at_10_percent": 7.333333333333333,
+        "top_k": 3,
+        "top_k_hits": 2,
+        "precision_at_k": 0.6666666666666666,
+        "average_precision_lift": 9.166666666666666,
+        "arm": "frozen_esmc_logistic",
+        "split": "locked_holdout"
+      }
+    },
+    {
+      "arm": "lora_assay_only",
+      "folds": 3,
+      "cv_mean_test_ap": 0.5617823534490202,
+      "cv_sd_test_ap": 0.13181733011152166,
+      "cv_mean_enrichment10": 5.222222222222222,
+      "cv_sd_enrichment10": 2.3589859717291275,
+      "pooled_oof_ap": 0.54590781358224,
+      "locked_holdout": {
+        "n": 22,
+        "positives": 2,
+        "prevalence": 0.09090909090909091,
+        "average_precision": 0.8333333333333333,
+        "roc_auc": 0.975,
+        "enrichment_at_10_percent": 7.333333333333333,
+        "top_k": 3,
+        "top_k_hits": 2,
+        "precision_at_k": 0.6666666666666666,
+        "average_precision_lift": 9.166666666666666,
+        "arm": "lora_assay_only",
+        "split": "locked_holdout",
+        "best_epoch": 8,
+        "train_n": 98,
+        "train_positives": 8,
+        "validation_n": 21,
+        "validation_positives": 2,
+        "presumed_negative_pool": 0,
+        "pool_positive_prevalence": 0.08163265306122448,
+        "gpu_peak_allocated_GiB": 1.8538761138916016,
+        "gradient_checks": {
+          "lora_nonzero_gradient": true,
+          "head_nonzero_gradient": true,
+          "frozen_parameter_unchanged": true,
+          "nonzero_lora_B_after_training": true
+        }
+      }
+    },
+    {
+      "arm": "lora_presumed_negative_pool",
+      "folds": 3,
+      "cv_mean_test_ap": 0.6140043531347879,
+      "cv_sd_test_ap": 0.16582500326433328,
+      "cv_mean_enrichment10": 5.222222222222222,
+      "cv_sd_enrichment10": 2.3589859717291275,
+      "pooled_oof_ap": 0.5862581464133731,
+      "locked_holdout": {
+        "n": 22,
+        "positives": 2,
+        "prevalence": 0.09090909090909091,
+        "average_precision": 0.5769230769230769,
+        "roc_auc": 0.725,
+        "enrichment_at_10_percent": 3.6666666666666665,
+        "top_k": 3,
+        "top_k_hits": 1,
+        "precision_at_k": 0.3333333333333333,
+        "average_precision_lift": 6.346153846153846,
+        "arm": "lora_presumed_negative_pool",
+        "split": "locked_holdout",
+        "best_epoch": 8,
+        "train_n": 98,
+        "train_positives": 8,
+        "validation_n": 21,
+        "validation_positives": 2,
+        "presumed_negative_pool": 7902,
+        "pool_positive_prevalence": 0.001,
+        "gpu_peak_allocated_GiB": 1.8538761138916016,
+        "gradient_checks": {
+          "lora_nonzero_gradient": true,
+          "head_nonzero_gradient": true,
+          "frozen_parameter_unchanged": true,
+          "nonzero_lora_B_after_training": true
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Few experimental positives; fold-to-fold uncertainty is large.",
+    "Random splits can contain related scaffolds; see overlap audit.",
+    "Generated sequences are unassayed presumed negatives, not confirmed hard negatives.",
+    "0.1% is reservoir class prevalence, not TPR or effective minibatch prevalence.",
+    "No prediction of affinity, mouse binding or pH selectivity.",
+    "Pooled OOF scores from independently trained models need not be equally calibrated."
+  ]
+}

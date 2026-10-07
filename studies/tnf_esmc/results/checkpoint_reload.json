@@ -1,0 +1,21 @@
+{
+  "job_id": "7",
+  "checks": {
+    "lora_assay_only": {
+      "max_absolute_score_difference": 1.5132141095719476e-08,
+      "matches_saved_predictions": true,
+      "checkpoint_sha256": "78144f14f09cbac5267d4408db99c35eefd184a8d458b1b21bf184e921dd6a2e",
+      "n_test_predictions": 22
+    },
+    "lora_presumed_negative_pool": {
+      "max_absolute_score_difference": 9.700012237878752e-09,
+      "matches_saved_predictions": true,
+      "checkpoint_sha256": "41d58676713db664bbe3c97eadcc4d681cbc879b636c4571c9ec2393be0b91bc",
+      "n_test_predictions": 22
+    },
+    "frozen_esmc_logistic": {
+      "max_absolute_score_difference": 7.303047167006582e-09,
+      "saved_head_sha256": "b2f56c3d820d73e188a478b8f948e87fd60bbf8d00936505fa1ec0fdfe331f87"
+    }
+  }
+}

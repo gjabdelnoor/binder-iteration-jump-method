@@ -1,0 +1,36 @@
+{
+  "seed": 42,
+  "model": "biohub/ESMC-300M",
+  "folds": 3,
+  "epochs": 8,
+  "steps_per_epoch": 16,
+  "batch_size": 8,
+  "rank": 8,
+  "alpha": 16,
+  "lora_lr": 0.0001,
+  "head_lr": 0.0003,
+  "weight_decay": 0.01,
+  "dropout": 0.1,
+  "generated_count": 12000,
+  "generation_batch": 32,
+  "generation_rounds": 2,
+  "mask_fraction": 0.35,
+  "temperature": 1.0,
+  "pool_positive_fraction": 0.001,
+  "synthetic_loss_weight": 0.25,
+  "donor_targets": [
+    "EGFR",
+    "RBX1",
+    "TrkA",
+    "15-PGDH"
+  ],
+  "arms": [
+    "lora_assay_only",
+    "lora_presumed_negative_pool"
+  ],
+  "validation_design": "70/15/15 seed-42 stratified random holdout; 3-fold outer CV on train+validation only, 20% inner validation",
+  "checkpoint_selection": "maximum inner-validation average precision, then minimum BCE",
+  "primary_test": "Experimental rows only. Synthetic rows NEVER enter experimental test metrics.",
+  "enrichment_definition": "precision among top ceil(0.10*N) divided by experimental test prevalence",
+  "no_scaffold_generalization_claim": true
+}

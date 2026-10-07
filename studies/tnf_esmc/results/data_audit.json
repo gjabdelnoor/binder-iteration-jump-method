@@ -1,0 +1,38 @@
+{
+  "source_url": "https://huggingface.co/datasets/Anthropic/claude-protein-binder-design",
+  "source_file": "data/tables/design_summary.parquet",
+  "local_csv_sha256": "a96dc3a4fcc293dd393a8c56fa367dadcac4db326c30f1c3ea3d8c2b9f72367a",
+  "source_target_rows": 150,
+  "eligible": 141,
+  "positives": 12,
+  "negatives": 129,
+  "excluded_assay_qc": 9,
+  "conflicting_sequences": 0,
+  "exact_duplicates_removed": 0,
+  "donor_counts": {
+    "RBX1": 28,
+    "TrkA": 20,
+    "EGFR": 10,
+    "15-PGDH": 1
+  },
+  "split_counts": {
+    "train": {
+      "n": 98,
+      "positives": 8,
+      "negatives": 90
+    },
+    "validation": {
+      "n": 21,
+      "positives": 2,
+      "negatives": 19
+    },
+    "test": {
+      "n": 22,
+      "positives": 2,
+      "negatives": 20
+    }
+  },
+  "target": "human TNF-alpha",
+  "no_mouse_or_pH_supervision": true,
+  "random_split_warning": "Random sequence split, NOT a scaffold-held-out benchmark."
+}

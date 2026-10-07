@@ -43,3 +43,7 @@ The October 3 export contains **9,166 records** across both arms, including base
 Only curated documentation and a provenance manifest are published here. Private sessions, credentials, infrastructure addresses, model weights, third-party textbooks, raw candidate sequences, and live ledgers are excluded. Reproducing the original campaign requires its private engine, checkpoints, inputs, and per-round receipts. No source-code or model redistribution rights are implied.
 
 Upstream tools: [ESM / ESM3 / ESMC / ESMFold2](https://github.com/biohub/esm), [Boltz](https://github.com/jwohlwend/boltz), [PROPKA](https://github.com/jensengroup/propka).
+
+## Executed TNF-alpha classifier tutorial
+
+An independent [ESMC LoRA binder-classification study](studies/tnf_esmc/README.md) now includes executable code, an executed PyTorch tutorial notebook, and recorded single-RTX-3060 results. It compares frozen embeddings, assay-only LoRA, and unassayed presumed-negative augmentation using the public Anthropic TNF dataset. The original private binder-jump engine remains outside this repository. The study does not establish binding of newly generated proteins.
