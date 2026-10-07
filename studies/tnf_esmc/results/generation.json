@@ -1,0 +1,19 @@
+{
+  "n": 12000,
+  "model": "biohub/ESMC-300M",
+  "seed": 42,
+  "donor_targets": {
+    "RBX1": 5780,
+    "TrkA": 3980,
+    "EGFR": 2051,
+    "15-PGDH": 189
+  },
+  "rounds": 2,
+  "mask_fraction": 0.35,
+  "temperature": 1.0,
+  "seconds": 124.16836717299998,
+  "sha256": "f94a992008f2f961d0cf715e3890a0249d61234ce164fc3a10f756ce2badf734",
+  "claimed_experimental_negatives": false,
+  "claimed_off_target_binding": false,
+  "note": "Masked sequence variants of experimentally positive off-target donors, not structure-conditioned designs."
+}
